@@ -1,0 +1,148 @@
+@import url('/css/base/variables.css');
+.title{
+    font-size:clamp(2rem, 5vw, var(--font-size-4xl));
+}
+ .title-bottom {
+    font-size:var(--font-size-xs) ;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    
+}
+.book-filter {
+    padding: 30px 0px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-footer-text);
+}
+
+
+
+.option-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-title li {
+    border: 1px solid #ddd6c7;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.option-title li a {
+    display: block;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.option-title li:hover {
+    background: #a64727;
+    border-color: #a64727;
+}
+
+.option-title li:hover a {
+    color: #fff;
+}
+
+
+.option-title li.active {
+    background: #a64727;
+    border-color: #a64727;
+}
+
+.option-title li.active a {
+    color: #fff;
+}
+
+
+
+.sort-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.sort-form label {
+    font-size: 14px;
+    color: #666;
+}
+
+.sort-form select {
+    padding: 10px 20px;
+    border: 1px solid #ddd6c7;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.books-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .book-filter {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .sort-form {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sort-form select {
+        min-width: 180px;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .book-filter {
+        padding-top: 22px;
+    }
+
+    .option-title {
+        width: 100%;
+    }
+
+    .option-title li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .option-title li a {
+        padding: 8px 12px;
+    }
+
+    .sort-form {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .sort-form select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

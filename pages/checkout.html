@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/base/global.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/variables.css">
+    <link rel="stylesheet" href="/css/pages/checkout.css">
+    <link rel="stylesheet" href="/css/components/navbar.css">
+    <link rel="stylesheet" href="/css/components/breadcrum.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/index.html" class="logo">
+                <div class="logo-icon">EZ</div>
+                <span>EZ BOOKS</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="primary-nav">
+                <a href="/index.html">Home</a>
+                <a href="/pages/books.html">Shop All</a>
+                <a href="/pages/books.html?genre=fiction">Fiction</a>
+                <a href="/pages/books.html?genre=mystery">Mystery</a>
+                <a href="/pages/books.html?genre=children">Children</a>
+                <a href="/pages/books.html?genre=poetry">Poetry</a>
+            </nav>
+
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search titles, authors..." />
+                </div>
+
+                <button class="btn-signin">
+                    Sign in
+                </button>
+
+                <a href="/pages/checkout.html" class="btn-cart">
+                    Bag
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="/index.html">Home</a>
+                <span>/</span>
+                <p>Bag</p>
+
+            </div>
+            <h1 class="title">Your bag</h1>
+
+            <div class="cart-grid">
+                <!-- Cart -->
+                <div class="cart-section">
+                    
+                </div>
+
+    
+                <div class="summary">
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+
+                <!-- LOGO -->
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-circle">P</div>
+                        <div class="brand">Pages & Co.</div>
+                    </div>
+
+                    <p class="footer-about">
+                        An independent bookshop for readers who like to take their time.
+                        Open since 1998.
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- SHOP -->
+                <div>
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="/pages/books.html?sort=new">New arrivals</a></li>
+                        <li><a href="/pages/books.html?sort=bestsellers">Bestsellers</a></li>
+                        <li><a href="/pages/books.html?genre=fiction">Fiction</a></li>
+                        <li><a href="/pages/books.html?genre=children">Children</a></li>
+                        <li><a href="/pages/books.html">Gift cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="footer-title">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Our story</a></li>
+                        <li><a href="/index.html">Events</a></li>
+                        <li><a href="/index.html">Visit the shop</a></li>
+                        <li><a href="/index.html">Journal</a></li>
+                    </ul>
+                </div>
+
+                <!-- HELP -->
+                <div>
+                    <h4 class="footer-title">Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="/pages/checkout.html">Shipping</a></li>
+                        <li><a href="/pages/checkout.html">Returns</a></li>
+                        <li><a href="/index.html">FAQ</a></li>
+                        <li><a href="/index.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- READING ROOM -->
+                <div>
+                    <h4 class="footer-title">The Reading Room</h4>
+                    <p class="newsletter-text">
+                        One handpicked recommendation in your inbox each week.
+                    </p>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address">
+                        <button>Join</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="footer-bottom">
+                <div>
+                    © 2026 Pages & Co. ·
+                    <a href="/index.html">Privacy</a> ·
+                    <a href="/index.html">Terms</a>
+                </div>
+                <div class="devide"></div>
+                <div>
+                    Free shipping on orders over $35
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="/js/cart.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/checkout.js"></script>
+</body>
+
+</html>

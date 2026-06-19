@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Book</title>
+    <link rel="stylesheet" href="/css/base/global.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/variables.css">
+    <link rel="stylesheet" href="/css/components/navbar.css">
+    <link rel="stylesheet" href="/css/pages/detail.css">
+    <link rel="stylesheet" href="/css/components/book-card.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/pages/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/index.html" class="logo">
+                <div class="logo-icon">EZ</div>
+                <span>EZ BOOKS</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="nav" id="primary-nav">
+                <a href="/index.html">Home</a>
+                <a href="/pages/books.html">Shop All</a>
+                <a href="/pages/books.html?genre=fiction">Fiction</a>
+                <a href="/pages/books.html?genre=mystery">Mystery</a>
+                <a href="/pages/books.html?genre=children">Children</a>
+                <a href="/pages/books.html?genre=poetry">Poetry</a>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search titles, authors..." />
+                </div>
+
+                <button class="btn-signin">
+                    Sign in
+                </button>
+
+                <a href="/pages/checkout.html" class="btn-cart">
+                    Bag
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="books">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="/index.html">Home</a>
+                    <span>/</span>
+                    <a href="/pages/books.html">Books</a>
+
+                </div>
+
+                <h1 class="title">All books</h1>
+                <p class="title-bottom" id="collectionCount"></p>
+
+                <div class="book-filter">
+                    <ul class="option-title" id="categoryFilter">
+                        
+                    </ul>
+
+                    <form class="sort-form">
+                        <label for="cars">Sort by:</label>
+                        <select id="sortBooks">
+                            <option value="featured">Featured</option>
+                            <option value="bestsellers">
+                               Bestseller
+                            </option>
+                            <option value="new">
+                                New Books
+                            </option>
+                            <option value="rating">
+                                Top Rated
+                            </option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="books-grid" id="booksGrid">
+                    <!-- lay danh sach book và sẽ thay doi theo các sellect như all, fiction, mystery,... -->
+
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <script src="/js/cart.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/books.js"></script>
+</body>
+
+</html>

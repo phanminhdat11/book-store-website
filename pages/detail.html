@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail</title>
+    <link rel="stylesheet" href="/css/pages/detail.css">
+    <link rel="stylesheet" href="/css/base/global.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/variables.css">
+    <link rel="stylesheet" href="/css/components/navbar.css">
+    <link rel="stylesheet" href="/css/components/breadcrum.css">
+    <link rel="stylesheet" href="/css/components/book-card.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+  
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/index.html" class="logo">
+                <div class="logo-icon">EZ</div>
+                <span>EZ BOOKS</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="nav" id="primary-nav">
+                <a href="/index.html">Home</a>
+                <a href="/pages/books.html">Shop All</a>
+                <a href="/pages/books.html?genre=fiction">Fiction</a>
+                <a href="/pages/books.html?genre=mystery">Mystery</a>
+                <a href="/pages/books.html?genre=children">Children</a>
+                <a href="/pages/books.html?genre=poetry">Poetry</a>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search titles, authors..." />
+                </div>
+
+                <button class="btn-signin">
+                    Sign in
+                </button>
+
+                <a href="/pages/checkout.html" class="btn-cart">
+                    Bag
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="book-detail">
+            <div class="container">
+    
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="/index.html">Home</a>
+                    <span>/</span>
+                    <a href="/pages/books.html">Books</a>
+                    <span>/</span>
+                    <p></p>
+                </div>
+<!--     
+                <div class="product-layout">
+    
+         
+                    <div class="book-cover-detail">
+                        <div class="cover-detail">
+                            <div class="cover-content">
+                                <h3>The Lighthouse Keeper</h3>
+                                <p>Mara Ellison</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="book-info-detail">
+    
+                        <span class="category">FICTION</span>
+    
+                        <h1>The Lighthouse Keeper</h1>
+    
+                        <p class="author-detail">
+                            by <em>Mara Ellison</em>
+                        </p>
+    
+                        <div class="meta-detail">
+                            <span><i class="fa-solid fa-star"></i> 4.6</span>
+                            <span>312 pages</span>
+                            <span>2023</span>
+                        </div>
+    
+                        <div class="price">
+                            <span class="current">$18.00</span>
+                            <span class="old">$24.00</span>
+                        </div>
+    
+                        <p class="description-detail">
+                            A widowed keeper and a runaway girl share a winter on a
+                            remote island, learning what it means to keep a light
+                            burning for someone else.
+                        </p>
+    
+                        <div class="actions">
+                            <a href="/pages/checkout.html" class="btn-cart-buy">
+                                Add to bag — $18.00
+                            </a>
+    
+                            <button class="btn-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                                Wishlist
+                            </button>
+                        </div>
+    
+                        <div class="book-specs">
+    
+                            <div class="spec">
+                                <span>FORMAT</span>
+                                <p>Paperback</p>
+                            </div>
+    
+                            <div class="spec">
+                                <span>PAGES</span>
+                                <p>312</p>
+                            </div>
+    
+                            <div class="spec">
+                                <span>PUBLISHED</span>
+                                <p>2023</p>
+                            </div>
+    
+                            <div class="spec">
+                                <span>PUBLISHER</span>
+                                <p>Harbor & Vale</p>
+                            </div>
+    
+                            <div class="spec">
+                                <span>LANGUAGE</span>
+                                <p>English</p>
+                            </div>
+    
+                            <div class="spec">
+                                <span>ISBN</span>
+                                <p>978-1-23456-001-2</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div> -->
+
+                <div id="productDetail">
+                    <!-- render sach detail -->
+                </div>
+    
+            </div>
+        </section>
+    <!-- san pham tuong tu -->
+        <section class="relative">
+            <div class="container">
+                <h1>You may also like</h1>
+    
+                <div class="relative-grid" id="relativeGrid">
+    
+                </div>
+    
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+
+                <!-- LOGO -->
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-circle">P</div>
+                        <div class="brand">Pages & Co.</div>
+                    </div>
+
+                    <p class="footer-about">
+                        An independent bookshop for readers who like to take their time.
+                        Open since 1998.
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- SHOP -->
+                <div>
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="/pages/books.html?sort=new">New arrivals</a></li>
+                        <li><a href="/pages/books.html?sort=bestsellers">Bestsellers</a></li>
+                        <li><a href="/pages/books.html?genre=fiction">Fiction</a></li>
+                        <li><a href="/pages/books.html?genre=children">Children</a></li>
+                        <li><a href="/pages/books.html">Gift cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- ABOUT -->
+                <div>
+                    <h4 class="footer-title">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Our story</a></li>
+                        <li><a href="/index.html">Events</a></li>
+                        <li><a href="/index.html">Visit the shop</a></li>
+                        <li><a href="/index.html">Journal</a></li>
+                    </ul>
+                </div>
+
+                <!-- HELP -->
+                <div>
+                    <h4 class="footer-title">Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="/pages/checkout.html">Shipping</a></li>
+                        <li><a href="/pages/checkout.html">Returns</a></li>
+                        <li><a href="/index.html">FAQ</a></li>
+                        <li><a href="/index.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- READING ROOM -->
+                <div>
+                    <h4 class="footer-title">The Reading Room</h4>
+                    <p class="newsletter-text">
+                        One handpicked recommendation in your inbox each week.
+                    </p>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address">
+                        <button>Join</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="footer-bottom">
+                <div>
+                    © 2026 Pages & Co. ·
+                    <a href="/index.html">Privacy</a> ·
+                    <a href="/index.html">Terms</a>
+                </div>
+                <div class="devide"></div>
+                <div>
+                    Free shipping on orders over $35
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--modal form login -->
+    <div class="overlay" id="loginModal">
+        <div class="modal">
+            <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </button>
+    
+            <div class="avatar">
+                P
+            </div>
+    
+            <h1>Welcome back</h1>
+            <p class="subtitle">
+                Sign in to access your bag, orders and wishlist.
+            </p>
+    
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>EMAIL</label>
+                    <input type="text" id="email" placeholder="you@example.com">
+                </div>
+    
+                <div class="form-group">
+                    <label>PASSWORD</label>
+                    <input type="password" id="password" placeholder="••••••••">
+                </div>
+    
+                <button type="submit" class="signin-btn">
+                    Sign in
+                </button>
+            </form>
+    
+            <p class="register">
+                New here?
+                <a href="#">Create an account</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/detail.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/components/modal.js"></script>
+
+</body>
+
+</html>

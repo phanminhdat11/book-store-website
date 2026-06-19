@@ -1,0 +1,15 @@
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    margin: 40px 0 20px 0;
+    font-size: var(--font-size-xs);
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb p {
+    font-weight: 600;
+}

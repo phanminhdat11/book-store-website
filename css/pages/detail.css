@@ -1,0 +1,260 @@
+
+@import url('/css/base/variables.css');
+
+
+/* breadcrumb */
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 0 20px 0;
+    font-size: var(--font-size-xs);
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb p {
+    font-weight: 600;
+}
+
+
+.product-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 380px) 1fr;
+    gap: clamp(28px, 6vw, 60px);
+}
+
+
+.cover-detail {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 6px;
+    background:
+        linear-gradient(
+            180deg,
+            #315d4c,
+            #6b9f7f
+        );
+    box-shadow: 0 20px 10px rgba(34, 34, 34, 0.12);
+    position: relative;
+}
+
+.cover-content {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+}
+
+.cover-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 10px;
+}
+
+.cover-content p {
+    font-size: 20px;
+    opacity: .9;
+}
+
+
+.category {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #d8c9ad;
+    border-radius: 999px;
+    font-size: var(--font-size-xs);
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #9d4b24;
+    background-color: var(--color-text-light);
+}
+
+.book-info-detail h1 {
+    font-size: clamp(2rem, 5vw, var(--font-size-4xl));
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.author-detail {
+    margin-top: 10px;
+    color: #666;
+    font-size: var(--font-size-md);
+}
+
+.meta-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+    color: #666;
+}
+.meta-detail span {
+    font-size: var(--font-size-xs);
+}
+
+.price {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.current {
+    color: #a64727;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+.old {
+    color: #888;
+    text-decoration: line-through;
+    font-size: var(--font-size-md);
+}
+
+.description-detail {
+    max-width: 700px;
+    margin-top: 24px;
+    line-height: 1.8;
+    font-size: var(--font-size-sm);
+}
+
+/* buttons */
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 35px;
+}
+
+.btn-cart-buy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 999px;
+    background: #a64727;
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: 1px solid #d8c9ad;
+    padding: 10px 25px;
+    border-radius: 999px;
+    font-weight:600 ;
+    cursor: pointer;
+}
+.btn-wishlist i {
+    margin-right: 4px;
+}
+
+/* specs */
+
+.book-specs {
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid #e1d5c1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.spec span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: var(--font-size-xsm);
+    letter-spacing: 2px;
+    color: #8f8478;
+    font-weight: 700;
+}
+
+.spec p {
+    font-size: var(--font-size-sm);
+}
+
+.relative{
+    margin: 40px 0;
+}
+.relative h1 {
+    margin-bottom: var(--space-xl);
+}
+.relative-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 900px) {
+    .product-layout {
+        grid-template-columns: minmax(220px, 320px) 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        margin-top: 28px;
+    }
+
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cover-detail {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .book-info-detail h1 {
+        margin-top: 16px;
+    }
+
+    .book-specs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .relative-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .cover-content {
+        bottom: 22px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .cover-content p {
+        font-size: var(--font-size-md);
+    }
+
+    .actions,
+    .btn-cart-buy,
+    .btn-wishlist {
+        width: 100%;
+    }
+
+    .btn-wishlist {
+        justify-content: center;
+    }
+
+    .book-specs,
+    .relative-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
