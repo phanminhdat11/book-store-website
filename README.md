@@ -3,6 +3,10 @@
 Website bán sách HTML, CSS và JavaScript thuần. 
 Dữ liệu sách được lấy từ file JSON, có giả lập đăng nhập và giỏ hàng bằng Web Storage.
 
+## Link deploy demo web:
+
+[EzBook Store](https://ezbookstore.netlify.app/)
+
 ## Các trang chính
 
 - `index.html`: Trang chủ, hiển thị sách nổi bật, best seller, sách mới và các thể loại.
